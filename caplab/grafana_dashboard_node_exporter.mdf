@@ -1,0 +1,19 @@
+# -*-YAML-*-  a Caplab module definition
+
+name: grafana_dashboard_node_exporter
+description: |-
+  a Grafana dashboard for Prometheus Node Exporter
+  by Ricardo F. (https://github.com/rfmoz)
+documentation: https://github.com/rfmoz/grafana-dashboards
+version: 1.27.1
+built-by: march@systempad.org
+
+contents:
+  - files: module.pre-activate
+  - root: ../prometheus
+    files: node-exporter-full.json
+  - root: ../
+    files: LICENSE
+
+hooks:
+  pre-activate: module.pre-activate
