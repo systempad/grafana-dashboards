@@ -5,7 +5,7 @@ description: |-
   a Grafana dashboard for Prometheus Node Exporter
   by Ricardo F. (https://github.com/rfmoz)
 documentation: https://github.com/rfmoz/grafana-dashboards
-version: 1.27.1
+version: 1.28.1
 built-by: march@systempad.org
 
 contents:
