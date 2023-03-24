@@ -9,11 +9,14 @@ version: 1.28.1
 built-by: march@systempad.org
 
 contents:
-  - files: module.pre-activate
+  - root: $LAB_ROOT/lib/scripts
+    files: grafana_dashboard.pre-activate
+
   - root: ../prometheus
     files: node-exporter-full.json
+
   - root: ../
     files: LICENSE
 
 hooks:
-  pre-activate: module.pre-activate
+  pre-activate: grafana_dashboard.pre-activate node-exporter-full system

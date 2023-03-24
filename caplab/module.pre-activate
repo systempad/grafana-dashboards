@@ -24,20 +24,11 @@
 # CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-if [[ $LAB_LOGLEVEL == trace ]]; then
-    xtrace="-x"
-    set -o xtrace;
-else
-    xtrace=
-fi
-
-set +m -u -f -o pipefail
-shopt -s expand_aliases lastpipe
-
 LAB_LIBDIR=$LAB_MODULES_ROOT/caplib/active &&
+    source $LAB_LIBDIR/serious.sh &&
     source $LAB_LIBDIR/module.sh &&
     source $LAB_LIBDIR/errmsg.sh &&
-    LAB-assert_hook grafana_dashboard_node_exporter pre-activate || exit 1
+    LAB-assert_hook grafana_dashboard_* pre-activate || exit 1
 
 # Grafana provisioning directories go here.
 readonly DASHBOARDS_ROOT=$LAB_MODULES_VAR/grafana/dashboards
