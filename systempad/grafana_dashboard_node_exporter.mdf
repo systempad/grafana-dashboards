@@ -1,4 +1,4 @@
-# -*-YAML-*-  a Caplab module definition
+# -*-YAML-*-  a Systempad module definition
 
 name: grafana_dashboard_node_exporter
 description: |-
