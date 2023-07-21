@@ -9,7 +9,7 @@ version: 1.28.2
 built-by: march@systempad.org
 
 contents:
-  - root: $LAB_ROOT/lib/scripts
+  - root: $PAD_CODE/lib/scripts
     files: grafana_dashboard.pre-activate
 
   - root: ../prometheus
