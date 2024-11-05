@@ -5,11 +5,10 @@ description: |-
   a Grafana dashboard for Prometheus Node Exporter
   by Ricardo F. (https://github.com/rfmoz)
 documentation: https://github.com/rfmoz/grafana-dashboards
-version: 1.28.2
-built-by: march@systempad.org
+version: 1.32.1
 
 contents:
-  - root: $PAD_CODE/lib/scripts
+  - root: ${PAD_CODE}/lib/scripts
     files: grafana_dashboard.pre-activate
 
   - root: ../prometheus
