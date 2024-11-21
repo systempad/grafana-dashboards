@@ -5,11 +5,11 @@ description: |-
   a Grafana dashboard for Prometheus Node Exporter
   by Ricardo F. (https://github.com/rfmoz)
 documentation: https://github.com/rfmoz/grafana-dashboards
-version: 1.32.1
+version: 1.32.2
 
 contents:
   - root: ${PAD_CODE}/lib/scripts
-    files: grafana_dashboard.pre-activate
+    files: provisioned_grafana_dashboard
 
   - root: ../prometheus
     files: node-exporter-full.json
@@ -18,4 +18,5 @@ contents:
     files: LICENSE
 
 hooks:
-  pre-activate: grafana_dashboard.pre-activate node-exporter-full system
+  pre-activate: provisioned_grafana_dashboard node-exporter-full.json
+  uninstall:    provisioned_grafana_dashboard
