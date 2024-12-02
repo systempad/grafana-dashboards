@@ -1,11 +1,11 @@
 # -*-YAML-*-  a Systempad module definition
 
-name: grafana_dashboard_node_exporter
+name: grafana_dashboard_node_exporter_1860
 description: |-
   a Grafana dashboard for Prometheus Node Exporter
   by Ricardo F. (https://github.com/rfmoz)
 documentation: https://github.com/rfmoz/grafana-dashboards
-version: 1.32.2
+version: 1.32.3
 
 contents:
   - root: ${PAD_CODE}/lib/scripts
